@@ -136,12 +136,6 @@
               My research focuses on (1) Synthetic Biology and (2) Metabolic Engineering, leveraging advanced tools such as AI and machine learning.
             </p>
 
-            <!-- Open-to-work status notice -->
-            <p>
-              ------<br>
-              <b style="color:#CE0058; text-decoration:none;">[Update] I am open to Research Fellow / Post-doctoral opportunities!</b> The expected starting date would be in 2026. Feel free to reach out if you are interested in my experiences.
-            </p>
-
             <!-- Experiences section -->
             <h2 id="experiences" style="margin-bottom: 25px;">Experiences</h2>
 
@@ -200,6 +194,24 @@
             <article class="columns">
               <div class="column is-3">
                 <figure class="image">
+                  <img src="images/publications/xuehui_bt_2026.jpg" alt="Figure for Bioresource Technology paper on P450 engineering for amentoflavone biosynthesis">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Multilevel cytochrome P450 engineering integrating protein language model-guided evolution enables de novo biosynthesis of amentoflavone in <i>Escherichia coli</i></b><br>
+                    <b>Xue-Hui Dai</b>, Jiang-Ming Zhu, Zhe-Yu Wu, Guang-Yi Wang, Yan-Chen Zhang, Chen-Fei Tian, Yu-Hong Ren, Hai-Li Liu, Yong Wang.<br>
+                    <a href="https://www.sciencedirect.com/journal/bioresource-technology" target="_blank" rel="noopener noreferrer"><b style="color:#CE0058; text-decoration:none;">Bioresource Technology</b></a><br>
+                    <a href="https://doi.org/10.1016/j.biortech.2026.134897" target="_blank" rel="noopener noreferrer">[Paper]</a>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
                   <img src="images/publications/xuehui_nc_2025.jpg" alt="Figure for Nature Communications paper on CYP90J biflavonoid biosynthesis">
                 </figure>
               </div>
@@ -225,7 +237,7 @@
               <div class="column">
                 <div class="content">
                   <p>
-                    <b>Metabolic engineering of Escherichia coli for squalene overproduction</b><br>
+                    <b>Metabolic engineering of <i>Escherichia coli</i> for squalene overproduction</b><br>
                     Jiangming Zhu, Yaping Mao, Hongchun Mo, <b>Xue-Hui Dai</b>, Yuhan Wu, Guangyi Wang, Zhanguang Feng, Ruirui Yue, Dongzhi Wei, Haili Liu, Yong Wang.<br>
                     <a href="https://www.sciencedirect.com/journal/synthetic-and-systems-biotechnology" target="_blank" rel="noopener noreferrer"><b style="color:#CE0058; text-decoration:none;">Synthetic and Systems Biotechnology</b></a><br>
                     <a href="https://doi.org/10.1016/j.synbio.2025.06.003" target="_blank" rel="noopener noreferrer">[Paper]</a>
@@ -257,6 +269,10 @@
 
   <!-- Sidebar active-link highlighting on scroll -->
   <script>
+  // jQuery is loaded with `defer`, so it only executes after parsing completes
+  // (just before DOMContentLoaded). Wait for that event so `$` is defined and the
+  // section offsets are measurable before we run.
+  document.addEventListener('DOMContentLoaded', function () {
 
     var $hashList = $('.menu-list a'), offsetList, maxScrollHeight;
 
@@ -321,6 +337,7 @@
       };
     }
 
+  });
   </script>
 
 
