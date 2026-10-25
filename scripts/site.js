@@ -32,20 +32,10 @@
     window.addEventListener('load', updateNavigation);
     updateNavigation();
 
-    const map = document.querySelector('.visitor-map img[data-src]');
-    const mapLabel = document.querySelector('.visitor-label');
+    const tracker = document.querySelector('.visitor-tracker[data-src]');
     const isPublishedSite = location.hostname === 'xuehui-me.github.io'
         && ['http:', 'https:'].includes(location.protocol);
-    if (map && isPublishedSite && navigator.onLine) {
-        map.addEventListener('load', () => {
-            map.hidden = false;
-            if (mapLabel) mapLabel.hidden = true;
-            scheduleNavigation();
-        });
-        map.addEventListener('error', () => {
-            map.hidden = true;
-            if (mapLabel) mapLabel.hidden = false;
-        });
-        map.src = map.dataset.src;
+    if (tracker && isPublishedSite && navigator.onLine) {
+        tracker.src = tracker.dataset.src;
     }
 })();

@@ -1,5 +1,6 @@
 html { scroll-behavior: smooth; scroll-padding-top: 24px; }
 body { line-height: 1.55; }
+.site-section { position: relative; }
 
 .site-layout.columns {
     display: grid;
@@ -86,18 +87,19 @@ a:focus-visible { outline: 2px solid #3273dc; outline-offset: 4px; }
 .red { color: #ee4c2c; font-style: normal; }
 .blue { color: #2c82ee; font-style: normal; }
 
-.site-footer {
-    display: flex;
+.visitor-link {
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 40px;
-    padding-top: 24px;
-    border-top: 1px solid #eee;
+    width: 24px;
+    height: 24px;
+    color: #9aa0a6;
 }
-.visitor-map { display: block; width: min(200px, 100%); }
-.visitor-map img { display: block; width: 100%; height: auto; }
-.visitor-map img[hidden] { display: none; }
-.visitor-label { display: block; text-align: center; font-size: 0.85rem; }
-.visitor-label[hidden] { display: none; }
+.visitor-link:hover, .visitor-link:focus-visible { color: #3273dc; }
+.visitor-tracker { display: none; }
 
 @media screen and (max-width: 1023px) {
     .site-section { padding-top: 28px; }
